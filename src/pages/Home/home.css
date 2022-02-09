@@ -1,0 +1,124 @@
+.container-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 60px;
+    color: #fff;
+}
+.logo span{
+    color: #fff;
+    margin-top: 14px;
+    margin-bottom: 34px;
+    font-size: 19px;
+}
+
+.area-input{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideY 2s;
+    -webkit-animation: slideY 2s;
+}
+@keyframes slideY{
+    from{
+        transform: translateY(90PX);
+        -webkit-transform: translateY(90PX);
+        -moz-transform: translateY(90PX);
+        -ms-transform: translateY(90PX);
+        -o-transform: translateY(90PX);
+}
+    to{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+}
+.area-input div{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.area-input svg{
+    margin: 0 8px;
+}
+
+.area-input input{
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: "#fff";
+    outline: none;
+    font-size: 18px;
+}
+
+.area-input input::placeholder{
+    color: rgb(255,255,255,0.8);
+}
+
+.area-input button{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: transform 0.7s;
+    -webkit-transition: transform 0.7s;
+    -moz-transition: transform 0.7s;
+    -ms-transition: transform 0.7s;
+    -o-transition: transform 0.7s;
+}
+
+
+.area-input button:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+@media (max-width:615px){
+    .logo img{
+        width: 95px;
+    }
+
+    .logo h1{
+        font-size: 40px;
+    }
+    .logo spam{
+        font-size: 16px;
+    }
+
+    .area-input{
+        width: 85%;
+    }
+
+}
